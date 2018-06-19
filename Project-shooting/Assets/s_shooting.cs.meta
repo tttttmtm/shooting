@@ -6,7 +6,7 @@ MonoImporter:
   externalObjects: {}
   serializedVersion: 2
   defaultReferences:
-  - bullet: {fileID: 1813186655158004, guid: 2eafca22f28454b84a4c3422e5d7e827, type: 2}
+  - bullet: {instanceID: 0}
   - muzzle: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
