@@ -5,7 +5,9 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - bullet: {fileID: 1813186655158004, guid: 2eafca22f28454b84a4c3422e5d7e827, type: 2}
+  - muzzle: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
