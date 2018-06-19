@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class s-shooting : MonoBehaviour {
+public class s_shooting : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
