@@ -113,6 +113,10 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &91861390 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 400162, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
+  m_PrefabInternal: {fileID: 1405290602}
 --- !u!1001 &339875520
 Prefab:
   m_ObjectHideFlags: 0
@@ -150,7 +154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400328, guid: 49f2055d53eeb4e5a92af590a44bddee, type: 2}
       propertyPath: m_LocalScale.x
@@ -483,7 +487,7 @@ Transform:
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1246049351
 GameObject:
@@ -563,13 +567,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1246049351}
-  m_LocalRotation: {x: 0.055428445, y: 0.06471169, z: -0.43752173, w: -0.8951619}
-  m_LocalPosition: {x: -0.14305067, y: 8.987445, z: -8.724665}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalRotation: {x: 0.597611, y: -0.2327664, z: -0.3950267, w: -0.65774983}
+  m_LocalPosition: {x: 0.026, y: 0.121, z: 0.098}
+  m_LocalScale: {x: 0.19999975, y: 0.19999972, z: 0.19999968}
   m_Children:
   - {fileID: 1467769353}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 91861390}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -2.4420002, y: -9.469001, z: 412.298}
 --- !u!114 &1246049356
 MonoBehaviour:
@@ -584,7 +588,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 1813186655158004, guid: 2eafca22f28454b84a4c3422e5d7e827, type: 2}
   muzzle: {fileID: 1467769353}
-  speed: 50
+  speed: 30
 --- !u!1001 &1405290602
 Prefab:
   m_ObjectHideFlags: 0
@@ -622,7 +626,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400100, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
       propertyPath: m_LocalScale.x
@@ -650,11 +654,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
       propertyPath: rotateSpeed
-      value: 20
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
       propertyPath: jumpPower
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 400054, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40046bae76ac54bffb59f14f47d9ba1b, type: 2}
@@ -696,7 +704,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400348, guid: 6788413dff62c534d8ca610faef3c7a2, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400348, guid: 6788413dff62c534d8ca610faef3c7a2, type: 2}
       propertyPath: m_LocalScale.x
