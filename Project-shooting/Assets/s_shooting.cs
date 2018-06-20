@@ -12,25 +12,30 @@ public class s_shooting : MonoBehaviour {
 
 	// 弾丸の速度
 	public float speed = 1000;
+	//public int count;
 
 	// Use this for initialization
 	void Start () {
-
+		//count = 0;
 	}
 
 	// Update is called once per frame
 	void Update () {
 		// z キーが押された時
 		if(Input.GetKeyDown (KeyCode.Z)){
-			// 弾丸の複製
-			GameObject bullets = GameObject.Instantiate(bullet)as GameObject;
+				// 弾丸の複製
+				GameObject bullets = GameObject.Instantiate (bullet)as GameObject;
 
-			Vector3 force;
-			force = this.gameObject.transform.forward * speed;
-			// Rigidbodyに力を加えて発射
-			bullets.GetComponent<Rigidbody>().AddForce (force);
-			// 弾丸の位置を調整
-			bullets.transform.position = muzzle.position;
+				//count++;
+
+				Vector3 force;
+				force = this.gameObject.transform.forward * speed;
+				// Rigidbodyに力を加えて発射
+				bullets.GetComponent<Rigidbody> ().AddForce (force);
+				// 弾丸の位置を調整
+				bullets.transform.position = muzzle.position;
+
 		}
 	}
+
 }
