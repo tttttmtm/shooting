@@ -29,7 +29,7 @@ public class s_shooting : MonoBehaviour {
 				//count++;
 
 				Vector3 force;
-				force = this.gameObject.transform.forward * speed;
+				force = this.gameObject.transform.up * speed;
 				// Rigidbodyに力を加えて発射
 				bullets.GetComponent<Rigidbody> ().AddForce (force);
 				// 弾丸の位置を調整
