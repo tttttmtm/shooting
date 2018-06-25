@@ -16,7 +16,7 @@ public class s_shooting : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		//count = 0;
+		Debug.Log ("Hello");
 	}
 
 	// Update is called once per frame
@@ -24,7 +24,7 @@ public class s_shooting : MonoBehaviour {
 		// z キーが押された時
 		if(Input.GetKeyDown (KeyCode.Z)){
 				// 弾丸の複製
-				GameObject bullets = GameObject.Instantiate (bullet)as GameObject;
+			GameObject bullets = GameObject.Instantiate (bullet) as GameObject;
 
 				//count++;
 
@@ -38,4 +38,7 @@ public class s_shooting : MonoBehaviour {
 		}
 	}
 
+	void OnCollisionEnter(Collision other) {
+		Debug.Log (/*other.gameObject.name + */"Enter");
+	}
 }
