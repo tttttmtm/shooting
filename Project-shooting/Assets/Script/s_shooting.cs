@@ -41,4 +41,7 @@ public class s_shooting : MonoBehaviour {
 	void OnCollisionEnter(Collision other) {
 		Debug.Log (/*other.gameObject.name + */"Enter");
 	}
+	void OnTriggerEnter(Collider t) {
+		Debug.Log (/*t.gameObject.name + */"Enter");
+	}
 }

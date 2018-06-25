@@ -51,34 +51,97 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\gun_sound.cs" />
-     <Compile Include="Assets\s_shooting.cs" />
-     <Compile Include="Assets\start.cs" />
-     <Compile Include="Assets\t_shooting.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\AutoBlink.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\IKCtrlRightHand.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\RandomWind.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\SpringBone.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\SpringCollider.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\SpringManager.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
-     <Compile Include="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
-     <None Include="Assets\UnityChan\Voice\unity-chan_voice_list.txt" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
-     <None Include="Assets\UnityChan\Stage\Shader\AlphaMask.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
-     <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\RollerBall\Scripts\Ball.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\RollerBall\Scripts\BallUserControl.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+     <Compile Include="Assets\object\Standard Assets\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\Joystick.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\TiltInput.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\TouchPad.cs" />
+     <Compile Include="Assets\object\Standard Assets\CrossPlatformInput\Scripts\VirtualInput.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water (Basic)\Scripts\WaterBasic.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\Displace.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\GerstnerDisplace.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\MeshContainer.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\PlanarReflection.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\SpecularLighting.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\Water.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\WaterBase.cs" />
+     <Compile Include="Assets\object\Standard Assets\Environment\Water\Water\Scripts\WaterTile.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\ActivateTrigger.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\AlphaButtonClickMask.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\AutoMobileShaderSwitch.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\AutoMoveAndRotate.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\CameraRefocus.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\CurveControlledBob.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\DragRigidbody.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\DynamicShadowSettings.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\EventSystemChecker.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\FollowTarget.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\ForcedReset.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\FOVKick.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\FPSCounter.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\LerpControlledBob.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\ObjectResetter.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\ParticleSystemDestroyer.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\PlatformSpecificContent.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\SimpleActivatorMenu.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\SimpleMouseRotator.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\SmoothFollow.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\TimedObjectActivator.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\TimedObjectDestructor.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\WaypointCircuit.cs" />
+     <Compile Include="Assets\object\Standard Assets\Utility\WaypointProgressTracker.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\AutoBlink.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\CameraController.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\FaceUpdate.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\IdleChanger.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\IKCtrlRightHand.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\RandomWind.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\SpringBone.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\SpringCollider.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\SpringManager.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\ThirdPersonCamera.cs" />
+     <Compile Include="Assets\object\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
+     <Compile Include="Assets\object\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
+     <Compile Include="Assets\Script\gun_sound.cs" />
+     <Compile Include="Assets\Script\s_shooting.cs" />
+     <Compile Include="Assets\Script\start.cs" />
+     <Compile Include="Assets\Script\Syoutotu.cs" />
+     <Compile Include="Assets\Script\t_shooting.cs" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
+     <None Include="Assets\object\UnityChan\Voice\unity-chan_voice_list.txt" />
+     <None Include="Assets\object\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku_ds.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye_blend.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair_ds.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" />
+     <None Include="Assets\object\Standard Assets\Environment\Water (Basic)\Shaders\FXWaterBasic.shader" />
+     <None Include="Assets\object\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hair.shader" />
+     <None Include="Assets\object\UnityChan\Stage\Shader\AlphaMask.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eyelash_blend.shader" />
+     <None Include="Assets\object\Standard Assets\Environment\Water\Water\Shaders\FXWaterPro.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
+     <None Include="Assets\object\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
+     <None Include="Assets\object\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />
+     <None Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\FirstPersonCharacterGuidelines.txt" />
+     <None Include="Assets\object\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+     <None Include="Assets\object\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
+     <None Include="Assets\object\Standard Assets\Characters\RollerBall\RollerBallGuidelines.txt" />
  <Reference Include="UnityEngine.UIAutomation">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UIAutomation/UnityEngine.UIAutomation.dll</HintPath>
  </Reference>
@@ -118,10 +181,6 @@
  <Reference Include="UnityEngine.StandardEvents">
  <HintPath>/Users/macuser/Library/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
  </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{EDEBB6F4-C41B-C411-7794-33276B481CC7}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
