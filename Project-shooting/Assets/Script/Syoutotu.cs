@@ -13,17 +13,20 @@ public class Syoutotu : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown (KeyCode.Z)){
-			rb.AddForce(Vector3.forward * thrust, ForceMode.Impulse);
+			rb.AddForce(Vector3.up * thrust, ForceMode.Impulse);
 		}
 	}
-	void OnCollisionEnter(Collision other)
-	{
-		Debug.Log (other.gameObject.name + "Enter");
+	void OnCollisionEnter(Collision collision) {
+		Debug.Log (collision.gameObject.name + "Enter");
 	}
 
-	// 衝突離脱の判定
-	void OnCollisionExit(Collision other)
-	{
-		Debug.Log (other.gameObject.name + "Exit");
+	//オブジェクトが離れた時
+	void OnCollisionExit(Collision collision) {
+		Debug.Log (collision.gameObject.name + "Out");
+	}
+
+	//オブジェクトが触れている間
+	void OnCollisionStay(Collision collision) {
+		Debug.Log (collision.gameObject.name + "Stay");
 	}
 }

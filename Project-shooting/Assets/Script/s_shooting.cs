@@ -14,6 +14,10 @@ public class s_shooting : MonoBehaviour {
 	public float speed = 1000;
 	//public int count;
 
+	public GameObject[] bullets = new GameObject[1000];
+
+	public int count = 0;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Hello");
@@ -24,24 +28,31 @@ public class s_shooting : MonoBehaviour {
 		// z キーが押された時
 		if(Input.GetKeyDown (KeyCode.Z)){
 				// 弾丸の複製
-			GameObject bullets = GameObject.Instantiate (bullet) as GameObject;
+			bullets[count] = GameObject.Instantiate (bullet) as GameObject;
 
 				//count++;
 
 				Vector3 force;
 				force = this.gameObject.transform.up * speed;
 				// Rigidbodyに力を加えて発射
-				bullets.GetComponent<Rigidbody> ().AddForce (force);
+				bullets[count].GetComponent<Rigidbody> ().AddForce (force);
 				// 弾丸の位置を調整
-				bullets.transform.position = muzzle.position;
+				bullets[count].transform.position = muzzle.position;
 
+			count++;
 		}
 	}
-
-	void OnCollisionEnter(Collision other) {
-		Debug.Log (/*other.gameObject.name + */"Enter");
+	void OnCollisionEnter(Collision collision) {
+		Debug.Log (collision.gameObject.name + "Enter");
 	}
-	void OnTriggerEnter(Collider t) {
-		Debug.Log (/*t.gameObject.name + */"Enter");
+
+	//オブジェクトが離れた時
+	void OnCollisionExit(Collision collision) {
+		Debug.Log (collision.gameObject.name + "Out");
+	}
+
+	//オブジェクトが触れている間
+	void OnCollisionStay(Collision collision) {
+		Debug.Log (collision.gameObject.name + "Stay");
 	}
 }
