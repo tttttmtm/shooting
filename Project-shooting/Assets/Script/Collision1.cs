@@ -6,8 +6,10 @@ public class Collision1 : MonoBehaviour {
 	// Use this for initialization
 	public GameObject sc;
 
+	public int score = 0;
+
 	void Start () {
-		
+		Debug.Log ("スタートしました");
 	}
 	
 	// Update is called once per frame
@@ -15,6 +17,19 @@ public class Collision1 : MonoBehaviour {
 		
 	}
 	void OnCollisionEnter(Collision collision) {
-		Debug.Log ("Enter"+sc.GetComponent<s_shooting>().count);
+		if (collision.gameObject.name == "Black") {
+			score = score + 30;
+		} else if (collision.gameObject.name == "Red") {
+			score = score + 50;
+		} else if (collision.gameObject.name == "Yellow") {
+			score = score + 100;
+		} else if (collision.gameObject.name == "Blue") {
+			score = score + 10;
+		} else if (collision.gameObject.name == "Green") {
+			score = score + 5;
+		} else {
+			score = score;
+		}
+		Debug.Log (score + "  " + collision.gameObject.name);
 	}
 }
