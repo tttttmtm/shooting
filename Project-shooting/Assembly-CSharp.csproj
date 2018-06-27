@@ -116,6 +116,7 @@
      <Compile Include="Assets\object\UnityChan\Scripts\ThirdPersonCamera.cs" />
      <Compile Include="Assets\object\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
      <Compile Include="Assets\object\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
+     <Compile Include="Assets\Script\Collision1.cs" />
      <Compile Include="Assets\Script\gun_sound.cs" />
      <Compile Include="Assets\Script\MoveFloorcos.cs" />
      <Compile Include="Assets\Script\MoveFloorsin.cs" />

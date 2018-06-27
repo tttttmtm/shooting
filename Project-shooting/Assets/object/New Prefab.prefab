@@ -24,6 +24,7 @@ GameObject:
   - component: {fileID: 23783591682728246}
   - component: {fileID: 54463980025223112}
   - component: {fileID: 114981177819754304}
+  - component: {fileID: 114038724876174792}
   m_Layer: 0
   m_Name: New Prefab
   m_TagString: Untagged
@@ -100,6 +101,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114038724876174792
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1813186655158004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af29c8df1603b47219e01a202443b692, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114981177819754304
 MonoBehaviour:
   m_ObjectHideFlags: 1

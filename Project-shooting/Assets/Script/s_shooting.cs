@@ -27,19 +27,6 @@ public class s_shooting : MonoBehaviour {
 			Shoot ();
 		}
 	}
-	void OnCollisionEnter(Collision collision) {
-		Debug.Log (collision.gameObject.name + "Enter");
-	}
-
-	//オブジェクトが離れた時
-	void OnCollisionExit(Collision collision) {
-		Debug.Log (collision.gameObject.name + "Out");
-	}
-
-	//オブジェクトが触れている間
-	void OnCollisionStay(Collision collision) {
-		Debug.Log (collision.gameObject.name + "Stay");
-	}
 
 	void Shoot(){
 		GameObject bullets = GameObject.Instantiate (bullet) as GameObject;
