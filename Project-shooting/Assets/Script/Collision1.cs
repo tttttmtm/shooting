@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class Collision1 : MonoBehaviour {
 	// Use this for initialization
-	public GameObject sc;
-
-	public int score = 0;
+	//public GameObject sc;
+	public int score;
 
 	void Start () {
 		Debug.Log ("スタートしました");
+		score = 0;
 	}
 	
 	// Update is called once per frame
