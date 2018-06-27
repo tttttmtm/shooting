@@ -43,7 +43,7 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 11
-  m_GIWorkflowMode: 0
+  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: d30a8977b00834ee7855a71b4c735b0e,
+  m_LightingDataAsset: {fileID: 112000002, guid: 290cda0271c634ff5934c00b1bd8f1a4,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -262,7 +262,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 463481734}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: c329a594c1afb4094a151c0262337b06, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -576,7 +576,7 @@ BoxCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 881997352}
-  m_Material: {fileID: 13400000, guid: 83a3a5f500bd24d8cb6d20b105718973, type: 2}
+  m_Material: {fileID: 13400000, guid: c329a594c1afb4094a151c0262337b06, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
@@ -624,6 +624,7 @@ MonoBehaviour:
   bullet: {fileID: 1813186655158004, guid: 2eafca22f28454b84a4c3422e5d7e827, type: 2}
   muzzle: {fileID: 730126976}
   speed: 20
+  count: 0
 --- !u!114 &1021906719
 MonoBehaviour:
   m_ObjectHideFlags: 0
