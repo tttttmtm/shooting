@@ -24,18 +24,7 @@ public class s_shooting : MonoBehaviour {
 	void Update () {
 		// z キーが押された時
 		if(Input.GetKeyDown (KeyCode.Z)){
-				// 弾丸の複製
-			GameObject bullets = GameObject.Instantiate (bullet) as GameObject;
-
-				Vector3 force;
-				force = this.gameObject.transform.up * speed;
-				// Rigidbodyに力を加えて発射
-				bullets.GetComponent<Rigidbody> ().AddForce (force);
-				// 弾丸の位置を調整
-				bullets.transform.position = muzzle.position;
-
-			Destroy(bullets, 5f);
-			count++;
+			Shoot ();
 		}
 	}
 	void OnCollisionEnter(Collision collision) {
@@ -50,5 +39,19 @@ public class s_shooting : MonoBehaviour {
 	//オブジェクトが触れている間
 	void OnCollisionStay(Collision collision) {
 		Debug.Log (collision.gameObject.name + "Stay");
+	}
+
+	void Shoot(){
+		GameObject bullets = GameObject.Instantiate (bullet) as GameObject;
+
+		Vector3 force;
+		force = this.gameObject.transform.up * speed;
+		// Rigidbodyに力を加えて発射
+		bullets.GetComponent<Rigidbody> ().AddForce (force);
+		// 弾丸の位置を調整
+		bullets.transform.position = muzzle.position;
+
+		Destroy(bullets, 5f);
+		count++;
 	}
 }
