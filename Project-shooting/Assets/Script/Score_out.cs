@@ -15,6 +15,6 @@ public class Score_out : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		scoreGUI.text = "Score : "+Score.score.ToString ();
+		scoreGUI.text = "Score : "+s_shooting.score.ToString ();
 	}
 }

@@ -15,9 +15,12 @@ public class s_shooting : MonoBehaviour {
 
 	public int count = 0;
 
+	public static int score;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Hello");
+		score = 0;
 	}
 
 	// Update is called once per frame

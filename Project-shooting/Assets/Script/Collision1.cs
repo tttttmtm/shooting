@@ -15,18 +15,18 @@ public class Collision1 : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.name == "Black") {
-			Score.score = Score.score + 30;
+			s_shooting.score = s_shooting.score + 30;
 		} else if (collision.gameObject.name == "Red") {
-			Score.score = Score.score + 50;
+			s_shooting.score = s_shooting.score + 50;
 		} else if (collision.gameObject.name == "Yellow") {
-			Score.score = Score.score + 100;
+			s_shooting.score = s_shooting.score + 100;
 		} else if (collision.gameObject.name == "Blue") {
-			Score.score = Score.score + 10;
+			s_shooting.score = s_shooting.score + 10;
 		} else if (collision.gameObject.name == "Green") {
-			Score.score = Score.score + 5;
+			s_shooting.score = s_shooting.score + 5;
 		} else {
 			
 		}
-		Debug.Log (Score.score + "  " + collision.gameObject.name);
+		Debug.Log (s_shooting.score + "  " + collision.gameObject.name);
 	}
 }
