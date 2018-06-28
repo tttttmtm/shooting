@@ -121,6 +121,7 @@
      <Compile Include="Assets\Script\MoveFloorcos.cs" />
      <Compile Include="Assets\Script\MoveFloorsin.cs" />
      <Compile Include="Assets\Script\s_shooting.cs" />
+     <Compile Include="Assets\Script\Score.cs" />
      <Compile Include="Assets\Script\start.cs" />
      <Compile Include="Assets\Script\Syoutotu.cs" />
      <Compile Include="Assets\Script\t_shooting.cs" />

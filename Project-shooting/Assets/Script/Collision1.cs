@@ -4,12 +4,9 @@ using UnityEngine;
 
 public class Collision1 : MonoBehaviour {
 	// Use this for initialization
-	//public GameObject sc;
-	public int score;
 
 	void Start () {
 		Debug.Log ("スタートしました");
-		score = 0;
 	}
 	
 	// Update is called once per frame
@@ -18,18 +15,18 @@ public class Collision1 : MonoBehaviour {
 	}
 	void OnCollisionEnter(Collision collision) {
 		if (collision.gameObject.name == "Black") {
-			score = score + 30;
+			Score.score = Score.score + 30;
 		} else if (collision.gameObject.name == "Red") {
-			score = score + 50;
+			Score.score = Score.score + 50;
 		} else if (collision.gameObject.name == "Yellow") {
-			score = score + 100;
+			Score.score = Score.score + 100;
 		} else if (collision.gameObject.name == "Blue") {
-			score = score + 10;
+			Score.score = Score.score + 10;
 		} else if (collision.gameObject.name == "Green") {
-			score = score + 5;
+			Score.score = Score.score + 5;
 		} else {
-			score = score;
+			
 		}
-		Debug.Log (score + "  " + collision.gameObject.name);
+		Debug.Log (Score.score + "  " + collision.gameObject.name);
 	}
 }
