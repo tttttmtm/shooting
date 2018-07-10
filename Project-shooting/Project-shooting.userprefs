@@ -1,11 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/Score_out.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Agent.cs">
     <Files>
-      <File FileName="Assets/Script/Syoutotu.cs" Line="13" Column="36" />
-      <File FileName="Assets/Script/s_shooting.cs" Line="23" Column="13" />
-      <File FileName="Assets/Script/Collision1.cs" Line="30" Column="24" />
-      <File FileName="Assets/Script/Score_out.cs" Line="21" Column="1" />
+      <File FileName="Assets/Scripts/Agent.cs" Line="1" Column="18" />
+      <File FileName="Assets/Script/MoveFloorsin.cs" Line="9" Column="3" />
+      <File FileName="Assets/Script/MoveFloorcos.cs" Line="16" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
