@@ -15,9 +15,12 @@ public class s_shooting : MonoBehaviour {
 
 	public int count = 0;
 
+	public static int score;
+
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Hello");
+		score = 0;
 	}
 
 	// Update is called once per frame
@@ -26,19 +29,6 @@ public class s_shooting : MonoBehaviour {
 		if(Input.GetKeyDown (KeyCode.Z)){
 			Shoot ();
 		}
-	}
-	void OnCollisionEnter(Collision collision) {
-		Debug.Log (collision.gameObject.name + "Enter");
-	}
-
-	//オブジェクトが離れた時
-	void OnCollisionExit(Collision collision) {
-		Debug.Log (collision.gameObject.name + "Out");
-	}
-
-	//オブジェクトが触れている間
-	void OnCollisionStay(Collision collision) {
-		Debug.Log (collision.gameObject.name + "Stay");
 	}
 
 	void Shoot(){
