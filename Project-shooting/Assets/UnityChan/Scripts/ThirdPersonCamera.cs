@@ -6,7 +6,7 @@
 using UnityEngine;
 using System.Collections;
 
-
+/*
 public class ThirdPersonCamera : MonoBehaviour
 {
 	public float smooth = 3f;		// カメラモーションのスムーズ化用変数
@@ -89,3 +89,4 @@ public class ThirdPersonCamera : MonoBehaviour
 				transform.forward = Vector3.Lerp(transform.forward, jumpPos.forward, Time.fixedDeltaTime * smooth);		
 	}
 }
+*/
