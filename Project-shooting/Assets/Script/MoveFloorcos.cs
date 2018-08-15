@@ -4,7 +4,8 @@ using System.Collections;
 public class MoveFloorcos : MonoBehaviour {
 
 	private Vector3 initialPosition;
-
+	private bool hit = false;
+	private Vector3 nowPosition;
 	void Start () {
 
 		initialPosition = transform.position;
@@ -12,8 +13,15 @@ public class MoveFloorcos : MonoBehaviour {
 	}
 
 	void Update () {
+		if (hit == false) {
+			transform.position = new Vector3 (Mathf.Cos (Time.time) * 50.0f + initialPosition.x, initialPosition.y, initialPosition.z);
+		} else {
+			nowPosition = transform.position;
+			transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
+		}
+	}
 
-		transform.position = new Vector3(Mathf.Cos(Time.time) * 50.0f + initialPosition.x, initialPosition.y, initialPosition.z);
-
+	private void OnCollisionEnter( Collision i_collision ){
+		hit = true;
 	}
 }
