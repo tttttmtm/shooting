@@ -16,8 +16,10 @@ public class MoveFloorcos : MonoBehaviour {
 		if (hit == false) {
 			transform.position = new Vector3 (Mathf.Cos (Time.time) * 50.0f + initialPosition.x, initialPosition.y, initialPosition.z);
 		} else {
+			float x = 90;
 			nowPosition = transform.position;
-			transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
+			transform.position = new Vector3 (nowPosition.x, 0.39f, nowPosition.z);
+			transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);
 		}
 	}
 
