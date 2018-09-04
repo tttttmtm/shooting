@@ -4,7 +4,8 @@ using System.Collections;
 public class MoveFloorcos : MonoBehaviour {
 
 	private Vector3 initialPosition;
-	private bool hit = false;
+	private int hit = 0;
+	private int HP = 10;
 	private Vector3 nowPosition;
 	void Start () {
 
@@ -13,7 +14,7 @@ public class MoveFloorcos : MonoBehaviour {
 	}
 
 	void Update () {
-		if (hit == false) {
+		if (hit < HP) {
 			transform.position = new Vector3 (Mathf.Cos (Time.time) * 50.0f + initialPosition.x, initialPosition.y, initialPosition.z);
 		} else {
 			float x = 90;
@@ -24,6 +25,6 @@ public class MoveFloorcos : MonoBehaviour {
 	}
 
 	private void OnCollisionEnter( Collision i_collision ){
-		hit = true;
+		hit++;
 	}
 }
