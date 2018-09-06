@@ -5,7 +5,7 @@ public class MoveFloorsin : MonoBehaviour {
 	
 	private Vector3 initialPosition;
 	private int hit = 0;
-	private int HP = 10;
+	private int HP = 5;
 	private Vector3 nowPosition;
 
 	void Start () {
