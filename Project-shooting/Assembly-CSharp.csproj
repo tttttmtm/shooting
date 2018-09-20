@@ -132,6 +132,7 @@
      <Compile Include="Assets\Script\gHP.cs" />
      <Compile Include="Assets\Script\gun_sound.cs" />
      <Compile Include="Assets\Script\MoveFloorcos.cs" />
+     <Compile Include="Assets\Script\Movefloorcos2.cs" />
      <Compile Include="Assets\Script\MoveFloorsin.cs" />
      <Compile Include="Assets\Script\s_shooting.cs" />
      <Compile Include="Assets\Script\Score_out.cs" />
