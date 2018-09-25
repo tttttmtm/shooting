@@ -157,7 +157,8 @@ Prefab:
       propertyPath: m_Name
       value: E3
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 7d079bede643c47bb976281e5449cab1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &231567753
@@ -207,7 +208,8 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 0.15
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 7d079bede643c47bb976281e5449cab1, type: 2}
   m_IsPrefabParent: 0
 --- !u!4 &385098077 stripped
@@ -637,7 +639,6 @@ GameObject:
   m_Component:
   - component: {fileID: 909960809}
   - component: {fileID: 909960808}
-  - component: {fileID: 909960807}
   - component: {fileID: 909960806}
   - component: {fileID: 909960810}
   m_Layer: 0
@@ -659,21 +660,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cec6e0572a34ca4801667df0b96589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &909960807
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 111694111756561664, guid: 7d079bede643c47bb976281e5449cab1,
-    type: 2}
-  m_PrefabInternal: {fileID: 231567753}
-  m_GameObject: {fileID: 909960805}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400004, guid: be66986effd141b4992d2d78be127139, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &909960808
 Animator:
   serializedVersion: 3
@@ -1105,7 +1091,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1425857888}
   - component: {fileID: 1425857887}
-  - component: {fileID: 1425857886}
   - component: {fileID: 1425857885}
   - component: {fileID: 1425857889}
   m_Layer: 0
@@ -1127,21 +1112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cec6e0572a34ca4801667df0b96589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &1425857886
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 111694111756561664, guid: 7d079bede643c47bb976281e5449cab1,
-    type: 2}
-  m_PrefabInternal: {fileID: 1870737563}
-  m_GameObject: {fileID: 1425857884}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400004, guid: be66986effd141b4992d2d78be127139, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &1425857887
 Animator:
   serializedVersion: 3
@@ -1260,7 +1230,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1810666144}
   - component: {fileID: 1810666143}
-  - component: {fileID: 1810666142}
   - component: {fileID: 1810666141}
   - component: {fileID: 1810666145}
   m_Layer: 0
@@ -1282,21 +1251,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30cec6e0572a34ca4801667df0b96589, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!111 &1810666142
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 111694111756561664, guid: 7d079bede643c47bb976281e5449cab1,
-    type: 2}
-  m_PrefabInternal: {fileID: 30171541}
-  m_GameObject: {fileID: 1810666140}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400004, guid: be66986effd141b4992d2d78be127139, type: 3}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!95 &1810666143
 Animator:
   serializedVersion: 3
@@ -1386,7 +1340,8 @@ Prefab:
       propertyPath: m_Name
       value: E5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 7d079bede643c47bb976281e5449cab1, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1959103471
