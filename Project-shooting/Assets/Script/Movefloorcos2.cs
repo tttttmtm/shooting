@@ -52,10 +52,11 @@ public class Movefloorcos2 : MonoBehaviour {
 				transform.position += transform.forward * speed * Time.deltaTime;
 			}
 		} else {
-				//float x = 90;
+			GetComponent<Animator>().SetTrigger ("deathtrigger");
+				/*float x = 90;
 				nowPosition = transform.position;
 			transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
-				//transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);
+				transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);*/
 			}
 		count++;
 	}
