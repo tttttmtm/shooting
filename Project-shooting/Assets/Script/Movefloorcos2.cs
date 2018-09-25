@@ -13,6 +13,7 @@ public class Movefloorcos2 : MonoBehaviour {
 	private int random = Random.Range(0, 4);
 	private float maxX, minX, maxZ, minZ;
 	private float speed;
+	private int flag=0;
 
 	void Start () {
 
@@ -51,7 +52,8 @@ public class Movefloorcos2 : MonoBehaviour {
 			} else if (minZ > nowPosition.z) {
 				transform.position += transform.forward * speed * Time.deltaTime;
 			}
-		} else {
+		} else if(flag == 0){
+			flag = 1;
 			GetComponent<Animator>().SetTrigger ("deathtrigger");
 				/*float x = 90;
 				nowPosition = transform.position;
