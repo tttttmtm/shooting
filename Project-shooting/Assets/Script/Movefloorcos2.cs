@@ -12,6 +12,7 @@ public class Movefloorcos2 : MonoBehaviour {
 	private Vector3 nowPosition;
 	private int random = Random.Range(0, 4);
 	private float maxX, minX, maxZ, minZ;
+	private float speed;
 
 	void Start () {
 
@@ -24,42 +25,38 @@ public class Movefloorcos2 : MonoBehaviour {
 	}
 
 	void Update () {
-		if (count > 15) {
-			random = Random.Range (0, 4);
-			count = 0;
-		}else{
 		if (hit < HP) {
-				nowPosition = transform.position;
-				if (count > 15) {
-					random = Random.Range (0, 4);
-					count = 0;
-				}else if (random == 0) {
-					if (maxX > nowPosition.x) {
-						transform.position += transform.right * 20.0f * Time.deltaTime;
-					}else transform.position -= transform.right * 30.0f * Time.deltaTime;
+			nowPosition = transform.position;
+			if (count > 15) {
+				random = Random.Range (0, 4);
+				count = 0;
+			}
+			speed = Random.Range (0, 10) * 5.0f;
+			if (random == 0) {
+				transform.position += transform.right * speed * Time.deltaTime;
+			} else if (random == 1) {
+				transform.position += transform.forward * speed * Time.deltaTime;
+			} else if (random == 2) {
+				transform.position -= transform.right * speed * Time.deltaTime;
+			} else if (random == 3) {
+				transform.position -= transform.forward * speed * Time.deltaTime;
+			}
 
-					} else if (random == 1) {
-					if (maxZ > nowPosition.z) {
-						transform.position += transform.forward * 20.0f * Time.deltaTime;
-					}else transform.position -= transform.forward * 30.0f * Time.deltaTime;
-						
-					} else if (random == 2) {
-					if (minX > nowPosition.x) {
-						transform.position -= transform.right * 20.0f * Time.deltaTime;
-					}else transform.position += transform.right * 30.0f * Time.deltaTime;
-
-					} else if (random == 3) {
-					if (minZ > nowPosition.z) {
-						transform.position -= transform.forward * 20.0f * Time.deltaTime;
-					}else transform.position += transform.forward * 30.0f * Time.deltaTime;
-					}
-			} else {
+			if (maxX < nowPosition.x) {
+				transform.position -= transform.right * speed * Time.deltaTime;
+			} else if (maxZ < nowPosition.z) {
+				transform.position -= transform.forward * speed * Time.deltaTime;
+			} else if (minX > nowPosition.x) {
+				transform.position += transform.right * speed * Time.deltaTime;
+			} else if (minZ > nowPosition.z) {
+				transform.position += transform.forward * speed * Time.deltaTime;
+			}
+		} else {
 				float x = 90;
 				nowPosition = transform.position;
 				transform.position = new Vector3 (nowPosition.x, 0.39f, nowPosition.z);
 				transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);
 			}
-		}
 		count++;
 	}
 
