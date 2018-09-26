@@ -13,6 +13,7 @@ public class Movefloorcos2 : MonoBehaviour {
 	private int random = Random.Range(0, 4);
 	private float maxX, minX, maxZ, minZ;
 	private float speed;
+	private int flag=0;
 
 	void Start () {
 
@@ -51,11 +52,13 @@ public class Movefloorcos2 : MonoBehaviour {
 			} else if (minZ > nowPosition.z) {
 				transform.position += transform.forward * speed * Time.deltaTime;
 			}
-		} else {
-				//float x = 90;
+		} else if(flag == 0){
+			flag = 1;
+			GetComponent<Animator>().SetTrigger ("deathtrigger");
+				/*float x = 90;
 				nowPosition = transform.position;
 			transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
-				//transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);
+				transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);*/
 			}
 		count++;
 	}
