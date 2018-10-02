@@ -55,6 +55,7 @@ public class Movefloorcos2 : MonoBehaviour {
 		} else if(flag == 0){
 			flag = 1;
 			GetComponent<Animator>().SetTrigger ("deathtrigger");
+			Destroy(this.gameObject,5.0f);
 				/*float x = 90;
 				nowPosition = transform.position;
 			transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
