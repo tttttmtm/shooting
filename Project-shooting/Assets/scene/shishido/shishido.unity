@@ -942,6 +942,11 @@ Prefab:
       propertyPath: m_Name
       value: ahiru
       objectReference: {fileID: 0}
+    - target: {fileID: 137338483541870322, guid: b6ea6161bc5f1471bb68c2d2480582f4,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 825509f11fd1f194b98016ab13b47420, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6ea6161bc5f1471bb68c2d2480582f4, type: 2}
   m_IsPrefabParent: 0
