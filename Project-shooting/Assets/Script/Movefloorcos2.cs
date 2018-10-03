@@ -7,7 +7,7 @@ public class Movefloorcos2 : MonoBehaviour {
 
 	private Vector3 initialPosition;
 	private int hit = 0;
-	private int HP = 5;
+	private int HP = 1;
 	private int count = 0;
 	private Vector3 nowPosition;
 	private int random = Random.Range(0, 4);
