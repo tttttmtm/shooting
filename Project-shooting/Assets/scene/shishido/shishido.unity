@@ -153,6 +153,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1839283322403900, guid: 6ea70529916cf46b5b7a37f3cf131bfb, type: 2}
+      propertyPath: m_Name
+      value: piero
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ea70529916cf46b5b7a37f3cf131bfb, type: 2}
   m_IsPrefabParent: 0
@@ -425,6 +429,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1647009200820522, guid: 216edec66c3b343898afc202e63dc449, type: 2}
+      propertyPath: m_Name
+      value: Bunny_easy
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 111322500061187556, guid: 216edec66c3b343898afc202e63dc449, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 216edec66c3b343898afc202e63dc449, type: 2}
@@ -613,6 +621,10 @@ Prefab:
     - target: {fileID: 4375274714798600, guid: 40844863f53d141878f3413604462c39, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1889162016238352, guid: 40844863f53d141878f3413604462c39, type: 2}
+      propertyPath: m_Name
+      value: zou_easy
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 40844863f53d141878f3413604462c39, type: 2}
@@ -926,6 +938,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1833445141967940, guid: b6ea6161bc5f1471bb68c2d2480582f4, type: 2}
+      propertyPath: m_Name
+      value: ahiru
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b6ea6161bc5f1471bb68c2d2480582f4, type: 2}
   m_IsPrefabParent: 0
@@ -1032,7 +1048,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1647009200820522, guid: 216edec66c3b343898afc202e63dc449, type: 2}
       propertyPath: m_Name
-      value: E1 (1)
+      value: Bunny_hard
       objectReference: {fileID: 0}
     - target: {fileID: 4600130512257300, guid: 216edec66c3b343898afc202e63dc449, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1223,7 +1239,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1889162016238352, guid: 40844863f53d141878f3413604462c39, type: 2}
       propertyPath: m_Name
-      value: Hellephant (1)
+      value: zou_hard
       objectReference: {fileID: 0}
     - target: {fileID: 4375274714798600, guid: 40844863f53d141878f3413604462c39, type: 2}
       propertyPath: m_LocalScale.x
