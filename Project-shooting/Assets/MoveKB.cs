@@ -7,12 +7,12 @@ public class MoveKB : MonoBehaviour {
 
 	private Vector3 initialPosition;
 	private int hit = 0;
-	private int HP = 5;
+	private int HP = 1;
 	private int count = 0;
 	private Vector3 nowPosition;
-	private int random = Random.Range(0, 4);
+	private int random = 0;
 	private float maxX, minX, maxZ, minZ;
-	private float speed;
+	private float speed = 5.0f;
 	private int flag=0;
 
 	void Start () {
@@ -29,28 +29,17 @@ public class MoveKB : MonoBehaviour {
 		if (hit < HP) {
 			nowPosition = transform.position;
 			if (count > 15) {
-				random = Random.Range (0, 4);
+				if (random == 0) {
+					random = 1;
+				} else if (random == 1) {
+					random = 0;
+				}
 				count = 0;
 			}
-			speed = Random.Range (0, 10) * 5.0f;
 			if (random == 0) {
 				transform.position += transform.right * speed * Time.deltaTime;
 			} else if (random == 1) {
-				transform.position += transform.forward * speed * Time.deltaTime;
-			} else if (random == 2) {
-				transform.position -= transform.right * speed * Time.deltaTime;
-			} else if (random == 3) {
-				transform.position -= transform.forward * speed * Time.deltaTime;
-			}
-
-			if (maxX < nowPosition.x) {
-				transform.position -= transform.right * speed * Time.deltaTime;
-			} else if (maxZ < nowPosition.z) {
-				transform.position -= transform.forward * speed * Time.deltaTime;
-			} else if (minX > nowPosition.x) {
 				transform.position += transform.right * speed * Time.deltaTime;
-			} else if (minZ > nowPosition.z) {
-				transform.position += transform.forward * speed * Time.deltaTime;
 			}
 		} else if(flag == 0){
 			flag = 1;
