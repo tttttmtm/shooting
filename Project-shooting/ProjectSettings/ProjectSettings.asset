@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: 049cd61c28c2045e28a14facf20c1e20
+  productGUID: fe112f23576174e74ae419956ff9be11
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 3
@@ -691,7 +691,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 87ce6935-9533-45b2-a038-304e9f92cf84
-  projectName: Project-shooting
+  projectName: 
   organizationId: yakyupiano
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
