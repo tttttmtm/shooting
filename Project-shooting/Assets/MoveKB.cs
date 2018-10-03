@@ -11,35 +11,35 @@ public class MoveKB : MonoBehaviour {
 	private int count = 0;
 	private Vector3 nowPosition;
 	private int random = 0;
-	private float maxX, minX, maxZ, minZ;
 	private float speed = 5.0f;
 	private int flag=0;
+	private int move = 0;
+	private Vector3 destination;
+	private bool arrived = false;
 
 	void Start () {
-
+		destination = new Vector3 (-28.7f, 0.1f, -122.6f);
 		initialPosition = transform.position;
-		maxX = initialPosition.x + 10.0f;
-		minX = initialPosition.x - 10.0f;
-		maxZ = initialPosition.z + 10.0f;
-		minZ = initialPosition.z - 10.0f;
-
 	}
 
 	void Update () {
 		if (hit < HP) {
 			nowPosition = transform.position;
-			if (count > 15) {
-				if (random == 0) {
-					random = 1;
-				} else if (random == 1) {
-					random = 0;
-				}
+			if(Vector3.Distance(transform.position, destination) < 0.5f) {
+				arrived = true;
 				count = 0;
 			}
-			if (random == 0) {
+			if (arrived) {
+				if (count > 5) {
+					move = 1;
+				}
+				nowPosition = transform.position;
+				transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
+			}
+			if (move == 0) {
 				transform.position += transform.right * speed * Time.deltaTime;
-			} else if (random == 1) {
-				transform.position += transform.right * speed * Time.deltaTime;
+			} else if (move == 1) {
+				transform.position -= transform.right * speed * Time.deltaTime;
 			}
 		} else if(flag == 0){
 			flag = 1;
