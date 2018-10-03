@@ -12,8 +12,10 @@ public class move_final : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.Space)) {
-			SceneManager.LoadScene ("final");
-		}	
+		Invoke("move",5);
+	}
+
+	void move(){
+		SceneManager.LoadScene ("final");
 	}
 }
