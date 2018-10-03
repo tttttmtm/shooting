@@ -3933,7 +3933,7 @@ MonoBehaviour:
   frostAttack: {fileID: 0}
   stinkAttack: {fileID: 0}
   slimeAttack: {fileID: 0}
-  numberOfAttacks: 0
+  numberOfAttacks: 4
   countDown: {fileID: 0}
 --- !u!114 &11436662
 MonoBehaviour:

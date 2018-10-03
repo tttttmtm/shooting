@@ -15,9 +15,11 @@ public class MoveKB : MonoBehaviour {
 	private int flag=0;
 	private int move = 0;
 	private Vector3 destination;
+	private Vector3 start;
 	private bool arrived = false;
 
 	void Start () {
+		start = new Vector3 (-25.8f, -1.1f, -146.2);
 		destination = new Vector3 (-28.7f, 0.1f, -122.6f);
 		initialPosition = transform.position;
 	}
