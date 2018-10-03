@@ -5,15 +5,5 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Main.unity
-    guid: 3c69389c495b88c428e2c45ebc98a6cd
-  - enabled: 1
-    path: Assets/scene/Start_scene.unity
-    guid: b5fb65e0083f8499d8a71399d4aa2a54
-  - enabled: 1
-    path: Assets/scene/shishido/shishido.unity
-    guid: ee19b1867f5bd45d79ef0ffa45d10bb2
-  - enabled: 1
-    path: Assets/scene/final/final.unity
-    guid: f2d3c368ccc3a41ac9701804ab93dc50
