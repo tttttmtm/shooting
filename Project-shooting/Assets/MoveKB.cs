@@ -15,11 +15,12 @@ public class MoveKB : MonoBehaviour {
 	private int flag=0;
 	private int move = 0;
 	private Vector3 destination;
-	private Vector3 start;
+	private Vector3 Back;
 	private bool arrived = false;
+	private bool arrive = false;
 
 	void Start () {
-		start = new Vector3 (-25.8f, -1.1f, -146.2);
+		Back = new Vector3 (-22.6f, -2.4f, -173);
 		destination = new Vector3 (-28.7f, 0.1f, -122.6f);
 		initialPosition = transform.position;
 	}
@@ -31,9 +32,20 @@ public class MoveKB : MonoBehaviour {
 				arrived = true;
 				count = 0;
 			}
+			if(Vector3.Distance(transform.position, Back) < 0.5f) {
+				arrive = true;
+				count = 0;
+			}
 			if (arrived) {
 				if (count > 5) {
 					move = 1;
+				}
+				nowPosition = transform.position;
+				transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
+			}
+			if (arrive) {
+				if (count > 5) {
+					move = 0;
 				}
 				nowPosition = transform.position;
 				transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
