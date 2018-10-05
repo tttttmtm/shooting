@@ -691,7 +691,7 @@ PlayerSettings:
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
   cloudProjectId: 87ce6935-9533-45b2-a038-304e9f92cf84
-  projectName: 
+  projectName: Project-shooting
   organizationId: yakyupiano
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
