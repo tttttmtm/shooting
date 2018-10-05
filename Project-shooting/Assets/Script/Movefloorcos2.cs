@@ -10,11 +10,13 @@ public class Movefloorcos2 : MonoBehaviour {
 	private int HP = 1;
 	private int count = 0;
 	private Vector3 nowPosition;
-	private int random = Random.Range(0, 4);
+	private int random;
 	private float maxX, minX, maxZ, minZ;
 	private float speed;
 	private int flag=0;
-
+	private void Awake(){
+		random = Random.Range (0, 4);
+	}
 	void Start () {
 
 		initialPosition = transform.position;
@@ -22,6 +24,7 @@ public class Movefloorcos2 : MonoBehaviour {
 		minX = initialPosition.x - 10.0f;
 		maxZ = initialPosition.z + 10.0f;
 		minZ = initialPosition.z - 10.0f;
+
 
 	}
 
