@@ -11,15 +11,16 @@ public class MoveKB : MonoBehaviour {
 	private int count = 0;
 	private Vector3 nowPosition;
 	private int random = 0;
-	private float speed = 5.0f;
+	private float speed = 10.0f;
 	private int flag=0;
 	private int move = 0;
 	private Vector3 destination;
 	private Vector3 start;
 	private bool arrived = false;
+	private bool arrive = false;
 
 	void Start () {
-		start = new Vector3 (-25.8f, -1.1f, -146.2f);
+		start = new Vector3 (-22.5f, -2.4f, -173.6f);
 		destination = new Vector3 (-28.7f, 0.1f, -122.6f);
 		initialPosition = transform.position;
 	}
@@ -34,13 +35,28 @@ public class MoveKB : MonoBehaviour {
 			if (arrived) {
 				if (count > 5) {
 					move = 1;
+					arrived = false;
+				}
+				nowPosition = transform.position;
+				transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
+			}
+			if(Vector3.Distance(transform.position, start) < 0.5f) {
+				arrive = true;
+				count = 0;
+			}
+			if (arrive) {
+				if (count > 5) {
+					move = 0;
+					arrive = false;
 				}
 				nowPosition = transform.position;
 				transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
 			}
 			if (move == 0) {
+				speed = 10.0f;
 				transform.position += transform.right * speed * Time.deltaTime;
 			} else if (move == 1) {
+				speed = 15.0f;
 				transform.position -= transform.right * speed * Time.deltaTime;
 			}
 		} else if(flag == 0){
