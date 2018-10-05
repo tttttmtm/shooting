@@ -67,9 +67,10 @@ public class Movefloorcos2 : MonoBehaviour {
 		count++;
 	}
 
-	private void OnCollisionEnter( Collision i_collision ){
-		if(Collision.gameObject.name == New bullet){
+	private void OnCollisionEnter( Collision collision ){
+		if (collision.gameObject.name == "bullet(Clone)") {
 			hit++;
+			Debug.Log (hit);
 		}
 	}
 }
