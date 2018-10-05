@@ -68,6 +68,8 @@ public class Movefloorcos2 : MonoBehaviour {
 	}
 
 	private void OnCollisionEnter( Collision i_collision ){
-		hit++;
+		if(Collision.gameObject.name == New bullet){
+			hit++;
+		}
 	}
 }
