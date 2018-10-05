@@ -11,15 +11,17 @@ public class UnityController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		if(Input.GetKeyDown (KeyCode.R)){
+			TurnRight();
+		}
 	}
 
 	void TurnLeft(){
-		transform.Rotate (new Vector2 (0, 5, 0));
+		transform.Rotate (new Vector3 (0, 5, 0));
 	}
 
 	void TurnRight(){
-		transform.Rotate (new Vector2 (0, -5, 0));
+		transform.Rotate (new Vector3 (0, -5, 0));
 	}
 
 	void Walk(){
