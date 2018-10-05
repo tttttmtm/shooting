@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class UnityController : MonoBehaviour {
 
+	public float speed = 10;
 	// Use this for initialization
 	void Start () {
 		
@@ -17,6 +18,9 @@ public class UnityController : MonoBehaviour {
 		if(Input.GetKeyDown (KeyCode.L)){
 			TurnLeft();
 		}
+		if(Input.GetKeyDown (KeyCode.W)){
+			Walk();
+		}
 	}
 
 	void TurnLeft(){
@@ -28,6 +32,6 @@ public class UnityController : MonoBehaviour {
 	}
 
 	void Walk(){
-		
+		transform.position += transform.forward * speed * Time.deltaTime;
 	}
 }
