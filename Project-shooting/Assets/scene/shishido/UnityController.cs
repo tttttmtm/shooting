@@ -14,14 +14,17 @@ public class UnityController : MonoBehaviour {
 		if(Input.GetKeyDown (KeyCode.R)){
 			TurnRight();
 		}
+		if(Input.GetKeyDown (KeyCode.L)){
+			TurnLeft();
+		}
 	}
 
 	void TurnLeft(){
-		transform.Rotate (new Vector3 (0, 5, 0));
+		transform.Rotate (new Vector3 (0, -5, 0));
 	}
 
 	void TurnRight(){
-		transform.Rotate (new Vector3 (0, -5, 0));
+		transform.Rotate (new Vector3 (0, 5, 0));
 	}
 
 	void Walk(){
