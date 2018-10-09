@@ -409,6 +409,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1536016452}
+  - component: {fileID: 1536016453}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -429,6 +430,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1536016453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1536016451}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d21fb464d10948b2a42ed5fcb827c2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Bunny_hard: {fileID: 1241046989950828, guid: 1b0ce97c5ec47416bb250457b4482694, type: 2}
+  Bunny_easy: {fileID: 1278227406874372, guid: 53074d3b9fdcd4d898fa36c7734878e0, type: 2}
+  Bunny_metal: {fileID: 1774158970639108, guid: 2c1a73b0c7a934164a429895438ed277,
+    type: 2}
+  zou_hard: {fileID: 1448788199168962, guid: 0c5cf80fbbeec4f00b080b3cdcfe3025, type: 2}
+  zou_easy: {fileID: 1975011198000588, guid: 04c8a3601c5d54b8f961b2d484486e0e, type: 2}
+  piero: {fileID: 1538282409656952, guid: b6be8b78857b24fffa260e42bc62e11b, type: 2}
+  ahiru: {fileID: 1403638135683052, guid: 3c86422f6f17345bc92da1176edfe37e, type: 2}
 --- !u!1 &1841374502
 GameObject:
   m_ObjectHideFlags: 0

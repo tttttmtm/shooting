@@ -23,6 +23,6 @@ public class make : MonoBehaviour {
 	}
 
 	void make_Bunny_hard(){
-		GameObject Bunny_hard = GameObject.Instantiate (Bunny_hard) as GameObject;
+		GameObject Bunny_hardp = GameObject.Instantiate (Bunny_hard) as GameObject;
 	}
 }
