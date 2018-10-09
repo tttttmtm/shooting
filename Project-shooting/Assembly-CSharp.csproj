@@ -178,6 +178,7 @@
      <Compile Include="Assets\Scripts\Kinect\KinectMotion.cs" />
      <Compile Include="Assets\Scripts\Kinect\TestObject.cs" />
      <Compile Include="Assets\Scripts\Kinect\VectorExtensions.cs" />
+     <Compile Include="Assets\Scripts\KinectAndUnity\KinectMotions.cs" />
      <Compile Include="Assets\Scripts\Managers\AllyManager.cs" />
      <Compile Include="Assets\Scripts\Managers\EnemySpawner.cs" />
      <Compile Include="Assets\Scripts\Managers\GameManager.cs" />
