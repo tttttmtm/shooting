@@ -31,7 +31,7 @@ public class s_shooting : MonoBehaviour {
 		}
 	}
 
-	void Shoot(){
+	public void Shoot(){
 		GameObject bullets = GameObject.Instantiate (bullet) as GameObject;
 
 		Vector3 force;

@@ -4,12 +4,10 @@ using Windows.Kinect;
 using System.Collections.Generic;
 using System.Linq;
 
-public class KinectMotion : MonoBehaviour
+public class KinectMotions : MonoBehaviour
 {
-    //public s_shooting shooting;
-
-    // public s_shooting shooting;
-    // public UnityController control;
+    public s_shooting shooting;
+    public UnityController control;
 
     public BodySourceManager _BodyManager;
 
@@ -24,7 +22,7 @@ public class KinectMotion : MonoBehaviour
 
 
     HandState[] pastHandRightState = new HandState[10];
-    public GameObject testObject;
+    //public GameObject testObject;
 
     // Use this for initialization
     void Start()
@@ -134,8 +132,8 @@ public class KinectMotion : MonoBehaviour
         if (!wasClosed && isClosed) //手を閉じたとき
         {
             Debug.Log("Bung!");
-            Instantiate(testObject);
-            //shooting.Shoot();
+            //Instantiate(testObject);
+            shooting.Shoot();
             notClosedCount = 0;
         }
 
@@ -212,20 +210,26 @@ public class KinectMotion : MonoBehaviour
         if (HandLeft.Y > ElbowLeft.Y + ofset)
         {
             Debug.Log("Go Forward");
+            control.GoForward();
         }//左手が肘より下にある
         else if (HandLeft.Y < ElbowLeft.Y - ofset)
         {
             Debug.Log("Go Back");
+            control.GoBack();
         }
         //左手が肘より右にある
         if (HandLeft.X > ElbowLeft.X + ofset)
         {
             Debug.Log("Turn Right");
+            control.TurnRight();
         }//左手が肘より左にある
         else if (HandLeft.X < ElbowLeft.X - ofset)
         {
             Debug.Log("Turn Left");
+            control.TurnLeft();
         }
     }
 
 }
+
+

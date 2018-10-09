@@ -5,8 +5,9 @@ using UnityEngine;
 public class UnityController : MonoBehaviour {
 
 	public float speed = 10;
-	// Use this for initialization
-	void Start () {
+    public float turnspeed = 1.0f;
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
@@ -19,19 +20,28 @@ public class UnityController : MonoBehaviour {
 			TurnLeft();
 		}
 		if(Input.GetKeyDown (KeyCode.W)){
-			Walk();
+            GoForward();
 		}
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            GoBack();
+        }
+    }
+
+	public void TurnLeft(){
+		transform.Rotate (new Vector3 (0, -turnspeed, 0));
 	}
 
-	void TurnLeft(){
-		transform.Rotate (new Vector3 (0, -5, 0));
+    public void TurnRight(){
+		transform.Rotate (new Vector3 (0, turnspeed, 0));
 	}
 
-	void TurnRight(){
-		transform.Rotate (new Vector3 (0, 5, 0));
-	}
-
-	void Walk(){
+    public void GoForward(){
 		transform.position += transform.forward * speed * Time.deltaTime;
 	}
+
+    public void GoBack()
+    {
+        transform.position -= transform.forward * speed * Time.deltaTime;
+    }
 }
