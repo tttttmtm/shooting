@@ -205,18 +205,22 @@ public class KinectMotions : MonoBehaviour
         //    Debug.Log("Up Right Hand");
         //}
 
-        float ofset = 0.1f;
+        float ofset = 0.15f;
         //左手が肘より上にある
         if (HandLeft.Y > ElbowLeft.Y + ofset)
         {
-            Debug.Log("Go Forward");
-            control.GoForward();
+            Debug.Log("Go Back");
+            control.GoBack();
         }//左手が肘より下にある
         else if (HandLeft.Y < ElbowLeft.Y - ofset)
         {
-            Debug.Log("Go Back");
-            control.GoBack();
+            Debug.Log("Go Forward");
+            control.GoForward();
         }
+        else {
+            control.Idle();
+        }
+
         //左手が肘より右にある
         if (HandLeft.X > ElbowLeft.X + ofset)
         {
