@@ -1055,6 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8959f9c8b9c7410a9393a5c5920c2a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1001 &1405290602
 Prefab:
   m_ObjectHideFlags: 0
@@ -1639,6 +1640,10 @@ Prefab:
     - target: {fileID: 4600130512257300, guid: 216edec66c3b343898afc202e63dc449, type: 2}
       propertyPath: m_LocalScale.x
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1647009200820522, guid: 216edec66c3b343898afc202e63dc449, type: 2}
+      propertyPath: m_Name
+      value: Bunny_metal
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 216edec66c3b343898afc202e63dc449, type: 2}

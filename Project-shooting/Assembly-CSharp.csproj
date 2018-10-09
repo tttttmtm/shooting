@@ -130,6 +130,7 @@
      <Compile Include="Assets\object\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
      <Compile Include="Assets\scene\final\create.cs" />
      <Compile Include="Assets\scene\final\final_score.cs" />
+     <Compile Include="Assets\scene\final\make.cs" />
      <Compile Include="Assets\scene\shishido\animationEvent.cs" />
      <Compile Include="Assets\scene\shishido\move_final.cs" />
      <Compile Include="Assets\scene\shishido\UnityController.cs" />
