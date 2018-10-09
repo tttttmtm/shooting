@@ -14,8 +14,8 @@ public class KinectMotions : MonoBehaviour
     HandState beforeHandRightState;
     bool isClosed = true;
     bool wasClosed = true;
-    const int judgeNotClosed = 2;
-    const int judgeClosed = 5;
+    const int judgeNotClosed = 1;
+    const int judgeClosed = 1;
     int notClosedCount = 0;
     int closedCount = 0;
 
@@ -102,13 +102,18 @@ public class KinectMotions : MonoBehaviour
         //右尻
         var HipRight = joints[JointType.HipRight].Position;
 
+        float ofset = 0.15f;
 
-        if (body.HandRightState == HandState.Closed) //閉じている手の形
+        //if (body.HandRightState == HandState.Closed) //閉じている手の形
+        if (HandRight.Y > ElbowRight.Y + ofset) //腕を上に向ける
+        //if (HandRight.Y > WristRight.Y + 0.03f) //手首を上に向ける
         {
-            closedCount++;
+                closedCount++;
             notClosedCount = 0;
         }
-        else if (body.HandRightState == HandState.Open || body.HandRightState == HandState.Lasso || body.HandRightState == HandState.Unknown) //閉じていない手の形
+        //else if (body.HandRightState == HandState.Open || body.HandRightState == HandState.Lasso || body.HandRightState == HandState.Unknown) //閉じていない手の形
+        else if (HandRight.Y < ElbowRight.Y + ofset)
+        //else if (HandRight.Y < WristRight.Y + 0.03f)
         {
             notClosedCount++;
             closedCount = 0;
@@ -205,17 +210,16 @@ public class KinectMotions : MonoBehaviour
         //    Debug.Log("Up Right Hand");
         //}
 
-        float ofset = 0.15f;
         //左手が肘より上にある
         if (HandLeft.Y > ElbowLeft.Y + ofset)
         {
-            Debug.Log("Go Back");
-            control.GoBack();
+            Debug.Log("Go Forward");
+            control.GoForward();
         }//左手が肘より下にある
         else if (HandLeft.Y < ElbowLeft.Y - ofset)
         {
-            Debug.Log("Go Forward");
-            control.GoForward();
+            Debug.Log("Go Back");
+            control.GoBack();        
         }
         else {
             control.Idle();

@@ -217,6 +217,7 @@ public class KinectMotion : MonoBehaviour
         {
             Debug.Log("Go Back");
         }
+        
         //左手が肘より右にある
         if (HandLeft.X > ElbowLeft.X + ofset)
         {
