@@ -12,9 +12,11 @@ public class make : MonoBehaviour {
 	public GameObject piero;
 	public GameObject ahiru;
 
+	public Transform Bunny_hardt;
+
 	// Use this for initialization
 	void Start () {
-		if(Collision1.Bunny_hard = true) make_Bunny_hard();
+		if(Collision1.Bunny_hard == true) make_Bunny_hard();
 	}
 	
 	// Update is called once per frame
@@ -24,5 +26,6 @@ public class make : MonoBehaviour {
 
 	void make_Bunny_hard(){
 		GameObject Bunny_hardp = GameObject.Instantiate (Bunny_hard) as GameObject;
+		Bunny_hardp.transform.position = Bunny_hardt.position;
 	}
 }
