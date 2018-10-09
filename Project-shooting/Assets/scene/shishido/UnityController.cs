@@ -18,29 +18,30 @@ public class UnityController : MonoBehaviour {
 		} else if (Input.GetKeyDown (KeyCode.J)) {
 			TurnLeft ();
 		} else if (Input.GetKeyDown (KeyCode.I)) {
-			GetComponent<Animator>().SetTrigger ("walk");
-			Goforward ();
+			GoForward ();
 		} else if (Input.GetKeyDown (KeyCode.K)) {
 			GoBack ();
-		} else {
-			GetComponent<Animator>().SetTrigger ("Idle");
+		} else {if (Input.GetKeyDown (KeyCode.P)) {
+				
+				GetComponent<Animator> ().SetTrigger ("Idle");
+			}
 		}
 	}
 
-	void TurnLeft(){
+	public void TurnLeft(){
 		transform.Rotate (new Vector3 (0, -turnspeed, 0));
 	}
 
-	void TurnRight(){
+	public void TurnRight(){
 		transform.Rotate (new Vector3 (0, turnspeed, 0));
 	}
 
-	void Goforward(){
-		
+	public void GoForward(){
+		GetComponent<Animator>().ResetTrigger ("walk");
 		transform.position += transform.forward * speed * Time.deltaTime;
 	}
 
-	void GoBack(){
+	public void GoBack(){
 		GetComponent<Animator>().SetTrigger ("walkback");
 		transform.position -= transform.forward * speed * Time.deltaTime;
 	}
