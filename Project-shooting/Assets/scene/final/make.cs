@@ -13,6 +13,12 @@ public class make : MonoBehaviour {
 	public GameObject ahiru;
 
 	public Transform Bunny_hardt;
+	public Transform Bunny_easyt;
+	public Transform Bunny_metalt;
+	public Transform zou_hardt;
+	public Transform zou_easyt;
+	public Transform ahirut;
+	public Transform pierot;
 
 	// Use this for initialization
 	void Start () {
@@ -27,5 +33,29 @@ public class make : MonoBehaviour {
 	void make_Bunny_hard(){
 		GameObject Bunny_hardp = GameObject.Instantiate (Bunny_hard) as GameObject;
 		Bunny_hardp.transform.position = Bunny_hardt.position;
+	}
+	void make_Bunny_easy(){
+		GameObject Bunny_easyp = GameObject.Instantiate (Bunny_easy) as GameObject;
+		Bunny_easyp.transform.position = Bunny_hardt.position;
+	}
+	void make_zou_hard(){
+		GameObject zou_hardp = Object.Instantiate (zou_hard) as GameObject;
+		zou_hardp.transform.position = Bunny_hardt.position;
+	}
+	void make_zou_easy(){
+		GameObject zou_easyp = GameObject.Instantiate (zou_easy) as GameObject;
+		zou_easyp.transform.position = Bunny_hardt.position;
+	}
+	void make_ahiru(){
+		GameObject ahirup = GameObject.Instantiate (ahiru) as GameObject;
+		ahirup.transform.position = Bunny_hardt.position;
+	}
+	void make_piero(){
+		GameObject pierop = GameObject.Instantiate (piero) as GameObject;
+		pierop.transform.position = Bunny_hardt.position;
+	}
+	void make_Bunny_metal(){
+		GameObject Bunny_metalp = GameObject.Instantiate (Bunny_metal) as GameObject;
+		Bunny_metalp.transform.position = Bunny_hardt.position;
 	}
 }
