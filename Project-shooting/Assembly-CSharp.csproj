@@ -62,7 +62,9 @@
      <Compile Include="Assets\KinectView\Scripts\InfraredSourceView.cs" />
      <Compile Include="Assets\KinectView\Scripts\MultiSourceManager.cs" />
      <Compile Include="Assets\Locomotion\Scripts\Locomotion.cs" />
+     <Compile Include="Assets\move_metalbunny.cs" />
      <Compile Include="Assets\MoveKB.cs" />
+     <Compile Include="Assets\notmove.cs" />
      <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
      <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
      <Compile Include="Assets\object\Standard Assets\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />

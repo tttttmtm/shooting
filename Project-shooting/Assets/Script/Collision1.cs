@@ -12,6 +12,8 @@ public class Collision1 : MonoBehaviour {
 	public static bool ahiru=false;
 	public static bool piero=false;
 	public static bool Bunny_metal=false;
+	public static bool Clown=false;
+	public static bool Bunny_metal2=false;
 
 	void Start () {
 		Debug.Log ("スタートしました");
@@ -34,27 +36,37 @@ public class Collision1 : MonoBehaviour {
 			}
 		} else if (collision.gameObject.name == "zou_hard") {
 			if (zou_hard == false) {
-				s_shooting.score = s_shooting.score + 100;
+				s_shooting.score = s_shooting.score + 30;
 				zou_hard = true;
 			}
 		} else if (collision.gameObject.name == "zou_easy") {
 			if (zou_easy == false) {
-				s_shooting.score = s_shooting.score + 10;
+				s_shooting.score = s_shooting.score + 20;
 				zou_easy = true;
 			}
 		} else if (collision.gameObject.name == "ahiru") {
 			if (ahiru == false) {
-				s_shooting.score = s_shooting.score + 5;
+				s_shooting.score = s_shooting.score + 10;
 				ahiru = true;
 			}
 		} else if (collision.gameObject.name == "piero") {
 			if (piero == false) {
-				s_shooting.score = s_shooting.score + 5;
+				s_shooting.score = s_shooting.score + 10;
 				piero = true;
 			}
-		}else if (collision.gameObject.name == "Bunny_metal") {
+		} else if (collision.gameObject.name == "Bunny_metal") {
 			if (Bunny_metal == false) {
 				s_shooting.score = s_shooting.score + 100;
+				Bunny_metal = true;
+			}
+		} else if (collision.gameObject.name == "Bunny_metal2") {
+			if (Bunny_metal2 == false) {
+				s_shooting.score = s_shooting.score + 100;
+				Bunny_metal = true;
+			}
+		}else if (collision.gameObject.name == "Clown") {
+			if (Clown == false) {
+				s_shooting.score = s_shooting.score + 40;
 				Bunny_metal = true;
 			}
 		} else {
