@@ -23,6 +23,12 @@ public class make : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		if(Collision1.Bunny_hard == true) make_Bunny_hard();
+		if(Collision1.Bunny_easy == true) make_Bunny_easy();
+		if(Collision1.Bunny_metal == true) make_Bunny_metal();
+		if(Collision1.zou_hard == true) make_zou_hard();
+		if(Collision1.zou_easy == true) make_zou_easy();
+		if(Collision1.ahiru == true) make_ahiru();
+		if(Collision1.piero == true) make_piero();
 	}
 	
 	// Update is called once per frame
