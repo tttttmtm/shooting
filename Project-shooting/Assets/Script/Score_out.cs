@@ -30,8 +30,10 @@ public class Score_out : MonoBehaviour
 		//　値が変わった時だけテキストUIを更新
 		if((int)seconds != (int)oldseconds) {
 			scoreGUI.text = "残り時間 : " + minute.ToString("00") + ":" + ((int) seconds).ToString ("00");
+
 		}
 		oldseconds = seconds;
+		        //scoreGUI.text = "Score : "+s_shooting.score.ToString ();
 	}
 	
 }
