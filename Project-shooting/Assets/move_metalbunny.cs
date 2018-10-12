@@ -13,15 +13,15 @@ public class move_metalbunny : MonoBehaviour {
 	private int random = 0;
 	private float speed = 10.0f;
 	private int flag=0;
-	private int move = 1;
+	private int move = 0;
 	private Vector3 destination;
 	private Vector3 start;
 	private bool arrived = false;
 	private bool arrive = false;
 
 	void Start () {
-		start = new Vector3 (-821.297f, -179.6f, 153.0078f);
-		destination = new Vector3 (-821f, -178.4756f, 195.1f);
+		start = new Vector3 (-329.1f, -0.9f, 55.0f);
+		destination = new Vector3 (-327.1f, -0.9f, 104.9f);
 		initialPosition = transform.position;
 	}
 
@@ -52,10 +52,10 @@ public class move_metalbunny : MonoBehaviour {
 				nowPosition = transform.position;
 				transform.position = new Vector3 (nowPosition.x, nowPosition.y, nowPosition.z);
 			}
-			if (move == 0) {
+			if (move == 1) {
 				speed = 10.0f;
 				transform.position += transform.forward * speed * Time.deltaTime;
-			} else if (move == 1) {
+			} else if (move == 0) {
 				speed = 10.0f;
 				transform.position -= transform.forward * speed * Time.deltaTime;
 			}
