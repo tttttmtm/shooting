@@ -45,7 +45,7 @@ public class Movefloorcos2 : MonoBehaviour {
 			} else if (random == 3) {
 				transform.position -= transform.forward * speed * Time.deltaTime;
 			}
-
+			speed = 20.0f;
 			if (maxX < nowPosition.x) {
 				transform.position -= transform.right * speed * Time.deltaTime;
 			} else if (maxZ < nowPosition.z) {
