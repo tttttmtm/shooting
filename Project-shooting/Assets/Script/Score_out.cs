@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Score_out : MonoBehaviour
 {
 	public Text scoreGUI;
-	public int time = 120;
+	public int time = 60;
 	public int minute;
 	public float seconds;
 	public float oldseconds;
@@ -14,7 +14,7 @@ public class Score_out : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
-		minute = 2;
+		minute = 1;
 		seconds = 0f;
 		oldseconds = 0f;
 	}
@@ -22,6 +22,9 @@ public class Score_out : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
+		if (seconds == 0 && minute == 0) {
+			return;
+		}
 		seconds = seconds - Time.deltaTime;
 		if(seconds < 0f) {
 			minute--;
@@ -33,7 +36,7 @@ public class Score_out : MonoBehaviour
 
 		}
 		oldseconds = seconds;
-		        //scoreGUI.text = "Score : "+s_shooting.score.ToString ();
+		        
 	}
 	
 }

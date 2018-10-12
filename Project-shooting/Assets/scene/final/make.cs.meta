@@ -5,7 +5,24 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Bunny_hard: {fileID: 1241046989950828, guid: 1b0ce97c5ec47416bb250457b4482694,
+      type: 2}
+  - Bunny_easy: {fileID: 1278227406874372, guid: 53074d3b9fdcd4d898fa36c7734878e0,
+      type: 2}
+  - Bunny_metal: {fileID: 1774158970639108, guid: 2c1a73b0c7a934164a429895438ed277,
+      type: 2}
+  - zou_hard: {fileID: 1448788199168962, guid: 0c5cf80fbbeec4f00b080b3cdcfe3025, type: 2}
+  - zou_easy: {fileID: 1975011198000588, guid: 04c8a3601c5d54b8f961b2d484486e0e, type: 2}
+  - piero: {fileID: 1538282409656952, guid: b6be8b78857b24fffa260e42bc62e11b, type: 2}
+  - ahiru: {fileID: 1403638135683052, guid: 3c86422f6f17345bc92da1176edfe37e, type: 2}
+  - Bunny_hardt: {instanceID: 0}
+  - Bunny_easyt: {instanceID: 0}
+  - Bunny_metalt: {instanceID: 0}
+  - zou_hardt: {instanceID: 0}
+  - zou_easyt: {instanceID: 0}
+  - ahirut: {instanceID: 0}
+  - pierot: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -62,12 +62,12 @@ public class Collision1 : MonoBehaviour {
 		} else if (collision.gameObject.name == "Bunny_metal2") {
 			if (Bunny_metal2 == false) {
 				s_shooting.score = s_shooting.score + 100;
-				Bunny_metal = true;
+				Bunny_metal2 = true;
 			}
 		}else if (collision.gameObject.name == "Clown") {
 			if (Clown == false) {
 				s_shooting.score = s_shooting.score + 40;
-				Bunny_metal = true;
+				Clown = true;
 			}
 		} else {
 			
