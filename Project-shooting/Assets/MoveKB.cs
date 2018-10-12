@@ -20,8 +20,8 @@ public class MoveKB : MonoBehaviour {
 	private bool arrive = false;
 
 	void Start () {
-		start = new Vector3 (-22.5f, -2.4f, -173.6f);
-		destination = new Vector3 (-28.7f, 0.1f, -122.6f);
+		start = new Vector3 (-39.2f, -0.9f, -124.9f);
+		destination = new Vector3 (-39.4f, -0.9f, -179.9f);
 		initialPosition = transform.position;
 	}
 
@@ -69,9 +69,13 @@ public class MoveKB : MonoBehaviour {
 				transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);*/
 		}
 		count++;
+		Debug.Log (transform.position);
 	}
 
-	private void OnCollisionEnter( Collision i_collision ){
-		hit++;
+	private void OnCollisionEnter( Collision collision ){
+		if (collision.gameObject.name == "bullet(Clone)") {
+			hit++;
+			Debug.Log (hit);
+		}
 	}
 }

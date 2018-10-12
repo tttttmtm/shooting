@@ -20,14 +20,14 @@ public class move_metalbunny : MonoBehaviour {
 	private bool arrive = false;
 
 	void Start () {
-		start = new Vector3 (-822.2f, -178.4756f, 166.3f);
-		destination = new Vector3 (-852.2703f, -178.4756f, 265.7188f);
+		start = new Vector3 (-821.297f, -179.6f, 153.0078f);
+		destination = new Vector3 (-821f, -178.4756f, 195.1f);
 		initialPosition = transform.position;
 	}
 
 	void Update () {
 		if (hit < HP) {
-			nowPosition = transform.position;
+			//nowPosition = transform.position;
 			if(Vector3.Distance(transform.position, destination) < 0.5f) {
 				arrived = true;
 				count = 0;
@@ -56,7 +56,7 @@ public class move_metalbunny : MonoBehaviour {
 				speed = 10.0f;
 				transform.position += transform.forward * speed * Time.deltaTime;
 			} else if (move == 1) {
-				speed = 15.0f;
+				speed = 10.0f;
 				transform.position -= transform.forward * speed * Time.deltaTime;
 			}
 		} else if(flag == 0){
@@ -69,9 +69,13 @@ public class move_metalbunny : MonoBehaviour {
 				transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);*/
 		}
 		count++;
+		Debug.Log (transform.position);
 	}
 
-	private void OnCollisionEnter( Collision i_collision ){
-		hit++;
+	private void OnCollisionEnter( Collision collision ){
+		if (collision.gameObject.name == "bullet(Clone)") {
+			hit++;
+			Debug.Log (hit);
+		}
 	}
 }
