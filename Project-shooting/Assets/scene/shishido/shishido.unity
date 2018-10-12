@@ -5315,17 +5315,17 @@ Prefab:
     - target: {fileID: 114131382133471660, guid: 1fce828da57d22647982c986080e6d6a,
         type: 2}
       propertyPath: m_Color.r
-      value: 0
+      value: 0.8853657
       objectReference: {fileID: 0}
     - target: {fileID: 114131382133471660, guid: 1fce828da57d22647982c986080e6d6a,
         type: 2}
       propertyPath: m_Color.g
-      value: 0.83448267
+      value: 0.9852941
       objectReference: {fileID: 0}
     - target: {fileID: 114131382133471660, guid: 1fce828da57d22647982c986080e6d6a,
         type: 2}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.26081315
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1fce828da57d22647982c986080e6d6a, type: 2}
