@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class s_shooting : MonoBehaviour {
 
-	// bullet prefab
-	public GameObject bullet;
+    public AudioClip gun;
+
+    // bullet prefab
+    public GameObject bullet;
 
 	// 弾丸発射点
 	public Transform muzzle;
@@ -41,7 +43,9 @@ public class s_shooting : MonoBehaviour {
 		// 弾丸の位置を調整
 		bullets.transform.position = muzzle.position;
 
-		Destroy(bullets, 5f);
+        GetComponent<AudioSource>().PlayOneShot(gun, 1f);
+
+        Destroy(bullets, 5f);
 		count++;
 	}
 }
