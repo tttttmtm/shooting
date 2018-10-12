@@ -12,8 +12,9 @@ public class start : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKey(KeyCode.Space)) {
-			SceneManager.LoadScene ("shishido");
-		}	
+		Invoke ("seni",5);
+	}
+	void seni(){
+		SceneManager.LoadScene ("shishido");
 	}
 }

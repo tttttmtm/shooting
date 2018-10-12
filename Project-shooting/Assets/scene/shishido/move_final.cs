@@ -12,7 +12,7 @@ public class move_final : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Invoke("move",62);
+		Invoke("move",58);
 	}
 
 	void move(){

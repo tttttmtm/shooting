@@ -69,13 +69,13 @@ public class MoveKB : MonoBehaviour {
 				transform.rotation = Quaternion.Euler (x, 0.0f, 0.0f);*/
 		}
 		count++;
-		Debug.Log (transform.position);
+		//Debug.Log (transform.position);
 	}
 
 	private void OnCollisionEnter( Collision collision ){
 		if (collision.gameObject.name == "bullet(Clone)") {
 			hit++;
-			Debug.Log (hit);
+			//Debug.Log (hit);
 		}
 	}
 }
