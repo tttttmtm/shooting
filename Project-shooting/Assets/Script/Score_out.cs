@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class Score_out : MonoBehaviour
 {
 	public Text scoreGUI;
+	public int time = 120;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -15,6 +17,11 @@ public class Score_out : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
 	{
-		scoreGUI.text = "Score : "+s_shooting.score.ToString ();
+		Invoke("text",5);
+	}
+
+	void text(){
+		scoreGUI.text = "残り時間 : "+ time.ToString ();
+		time = time - 1;
 	}
 }
